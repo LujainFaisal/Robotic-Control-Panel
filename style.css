@@ -1,0 +1,161 @@
+body{
+	margin:0;
+	padding:0;  
+}
+
+.header{
+    background:#A9A9A9;
+	padding:40px 0;
+	
+	
+}
+
+.box{
+    background:none;
+    width:500px;
+    height:100px;
+	border:1px solid#fff;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.text{
+	font-family:Lucidatypewriter, monospace;
+	text-align:center;
+	font-size:35px;
+	color:#fff;	
+}
+
+.footer{
+    background:#A9A9A9;
+	padding:25px 0;
+	font-family:Lucidatypewriter, monospace;
+	text-align:center;
+	font-size:15px;
+	color:#fff;	
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	
+}
+
+.container{
+	 text-align:center;
+	 margin-top:50px; 
+ }
+ 
+.btn1,.btn4{
+	 border:1px solid#3498db;   
+	 background:none;
+	 padding:10px 20px;
+	 font-size:20px;
+	 font-family:"montserrat";
+	 cursor: pointer;
+	 margin: 10px;
+	 transition:0.8s;
+	 position: relative;
+	 overflow: hidden; 
+}
+
+.btn2,.btn5{
+	 border:1px solid#3CB371;
+	 background:none;
+	 padding:10px 20px;
+	 font-size:20px;
+	 font-family:"montserrat";
+	 cursor: pointer;
+	 margin: 10px;
+	 transition:0.8s;
+	 position: relative;
+	 overflow: hidden; 
+}
+	
+.btn3{ 
+     border:1px solid#FF6347;
+	 background:none;
+	 padding:10px 20px;
+	 font-size:20px;
+	 font-family:"montserrat";
+	 cursor: pointer;
+	 margin: 10px;
+	 transition:0.8s;
+	 position: relative;
+	 overflow: hidden;
+}
+
+.btn2,.btn5{
+	 color:#3CB371;
+}
+ 
+.btn1,.btn3,.btn4{
+	 color:#fff;
+}
+ 
+.btn2:hover,.btn5:hover{
+	 color:#fff;
+}
+ 
+.btn1:hover,.btn4:hover{
+	 color:#3498db;
+}
+ 
+.btn3:hover{
+	 color:#FF6347;
+}
+ 
+.btn1::before,.btn4::before{
+	 content:"";
+	 background:#3498db;
+	 z-index:-1;
+	 transition:0.8s;
+	 position:absolute;
+	 left:0;
+	 width:100%;
+	 height:0%
+}
+ 
+.btn2::before,.btn5::before{
+	 content:"";
+	 background:#3CB371;
+	 z-index:-1;
+	 transition:0.8s;
+	 position:absolute;
+	 left:0;
+	 width:100%;
+	 height:0%
+}
+	 
+.btn3::before{
+	 content:"";
+	 background:#FF6347;
+	 z-index:-1;
+	 transition:0.8s;
+	 position:absolute;
+	 left:0;
+	 width:100%;
+	 height:0%
+}
+	 
+.btn1::before,.btn3::before,.btn5::before{
+	 top:0;
+	 border-radius:0 0 50% 50%;
+}
+ 
+.btn2::before,.btn4::before{
+	 bottom:0;
+	 border-radius:50% 50% 0 0;
+}
+ 
+.btn1::before,.btn3::before,.btn4::before{
+	  height:180%;
+}
+ 
+.btn2:hover:before,.btn5:hover:before{
+	  height:180%;
+}
+ 
+.btn1:hover:before,.btn3:hover:before,.btn4:hover:before{
+	  height:0%;
+}
+ 
